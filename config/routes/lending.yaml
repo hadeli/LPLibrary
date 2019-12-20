@@ -1,0 +1,30 @@
+lending-display-all:
+  path: /
+  controller: Alexandrie\Controller\LendingController::displayAll
+  methods: GET
+
+lending-display:
+  path: /{id}
+  controller: Alexandrie\Controller\LendingController::display
+  methods: GET
+  requirements:
+    number: \d+
+
+lending-delete:
+  path: /{id}
+  controller: Alexandrie\Controller\LendingController::delete
+  methods: DELETE
+  requirements:
+    number: \d+
+
+lending-add:
+  path: /
+  controller: Alexandrie\Controller\LendingController::add
+  methods: PUT
+
+lending-update:
+  path: /{id}
+  controller: Alexandrie\Controller\LendingController::update
+  methods: PATCH
+  requirements:
+    number: \d+

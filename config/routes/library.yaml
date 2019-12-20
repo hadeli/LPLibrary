@@ -1,0 +1,30 @@
+library-display-all:
+  path: /
+  controller: Alexandrie\Controller\LibraryController::displayAll
+  methods: GET
+
+library-display:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::display
+  methods: GET
+  requirements:
+    number: \d+
+
+library-delete:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::delete
+  methods: DELETE
+  requirements:
+    number: \d+
+
+library-add:
+  path: /
+  controller: Alexandrie\Controller\LibraryController::add
+  methods: PUT
+
+library-update:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::update
+  methods: PATCH
+  requirements:
+    number: \d+
