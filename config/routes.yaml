@@ -1,3 +1,84 @@
 #index:
 #    path: /
 #    controller: Alexandrie\Controller\DefaultController::index
+
+listbooks:
+  path: /books
+  controller : Alexandrie\Controller\BookController::listBook
+  methods : GET
+
+listbook:
+  path: /books/{id}
+  controller: Alexandrie\Controller\BookController::listBookById
+  methods: GET
+
+updatebook:
+  path: /up_book/{id}
+  controller : Alexandrie\Controller\BookController::updateBook
+  methods : PATCH
+
+deletebook:
+  path: /del_book/{id}
+  controller : Alexandrie\Controller\BookController::deleteBook
+  methods : DELETE
+
+
+
+listcategories:
+  path: /categories
+  controller: Alexandrie\Controller\CategoryController::listCategory
+  methods: GET
+
+listcategory:
+  path: /categories/{id}
+  controller: Alexandrie\Controller\CategoryController::listCategoryById
+  methods: GET
+
+
+
+listcopies:
+  path: /copies
+  controller: Alexandrie\Controller\CopyController::listCopy
+  methods: GET
+
+listcopy:
+  path: /copies/{id}
+  controller: Alexandrie\Controller\CopyController::listCopyById
+  methods: GET
+
+
+
+listlendings:
+  path: /lendings
+  controller: Alexandrie\Controller\LendingController::listLending
+  methods: GET
+
+listlending:
+  path: /lendings/{id}
+  controller: Alexandrie\Controller\LendingController::listLendingById
+  methods: GET
+
+
+
+listlibraries:
+  path: /libraries
+  controller: Alexandrie\Controller\LibraryController::listLibrary
+  methods: GET
+
+listlibrary:
+  path: /libraries/{id}
+  controller: Alexandrie\Controller\LibraryController::listLibraryById
+  methods: GET
+
+
+
+listreaders:
+  path: /readers
+  controller: Alexandrie\Controller\ReaderController::listReader
+  methods: GET
+
+listreader:
+  path: /readers/{id}
+  controller: Alexandrie\Controller\ReaderController::listReaderById
+  methods: GET
+
