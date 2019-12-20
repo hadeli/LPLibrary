@@ -9,6 +9,7 @@ use Alexandrie\Entity\Category;
 use Alexandrie\Entity\Copy;
 use Alexandrie\Entity\Lending;
 use Doctrine\DBAL\Exception\ForeignKeyConstraintViolationException;
+use Doctrine\ORM\ORMException;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -35,11 +36,14 @@ class BookController extends AbstractController
         $book->setIsbn($isbn);
         $book->setName($name);
 
-        /** @var Category $category */
-        $category = $this->getDoctrine()->getRepository(Category::class)->find($category_id);
-        if(is_null($book))
-            return $this->json(array("message" => "category not found"), Response::HTTP_NOT_FOUND);
-        $book->setCategory($category);
+        if(isset($category_id)){
+            /** @var Category $category */
+            $category = $this->getDoctrine()->getRepository(Category::class)->find($category_id);
+            if(is_null($book))
+                return $this->json(array("message" => "category not found"), Response::HTTP_NOT_FOUND);
+            $book->setCategory($category);
+        }else
+            return $this->json("Catégorie manquante");
 
         $em = $this->getDoctrine()->getManager();
         $em->persist($book);
@@ -62,19 +66,21 @@ class BookController extends AbstractController
         if(isset($name) && !empty($name))
             $book->setName($name);
 
-        if(isset($category_id) && !empty($category_id)){
+        if(isset($category_id)){
             /** @var Category $category */
             $category = $this->getDoctrine()->getRepository(Category::class)->find($category_id);
             if(is_null($book))
                 return $this->json(array("message" => "category not found"), Response::HTTP_NOT_FOUND);
             $book->setCategory($category);
-        }
+        }else
+            return $this->json("Catégorie manquante");
 
         $em = $this->getDoctrine()->getManager();
         $em->persist($book);
         $em->flush();
 
         return $this->json($book);
+
 
     }
     public function delete_book($id){
