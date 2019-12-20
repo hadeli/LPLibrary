@@ -1,0 +1,24 @@
+library:
+  path: /
+  controller: Alexandrie\Controller\LibraryController::listLibrary
+  methods: GET
+
+libraryCreate:
+  path: /create
+  controller: Alexandrie\Controller\LibraryController::createLibrary
+  methods: ['PUT', 'GET']
+
+libraryShow:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::showLibrary
+  methods: GET
+
+libraryUpdate:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::updateLibrary
+  methods: PATCH
+
+libraryDelete:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::deleteLibrary
+  methods: DELETE
