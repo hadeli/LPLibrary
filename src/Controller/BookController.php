@@ -5,6 +5,8 @@ namespace Alexandrie\Controller;
 
 
 use Alexandrie\Entity\Book;
+use Alexandrie\Entity\Copy;
+use Alexandrie\Entity\Lending;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -78,5 +80,24 @@ class BookController extends AbstractController
             return $this->json(['code' => 1, 'message' => $e->getMessage()], 400);
         }
         return $this->json(['code' => 0, 'message' => 'Livre supprimé']);
+    }
+
+    public function findReader(int $id){
+        public function findAllReadersForOneBook($book): array
+        {
+            $entityManager = $this->getEntityManager();
+
+            $query = $entityManager->createQuery(
+                'SELECT r.*
+            FROM ((reader r JOIN lending l ON r.id = l.reader_id) JOIN copy c ON c.id = l.copy_id) JOIN book b on b.id = c.book_id
+            WHERE b.id = :book'
+            )->setParameter('book', $book);
+
+            // returns an array of Product objects
+            return $query->getResult();
+
+        }
+
+        findAllReadersForOneBook($id);
     }
 }

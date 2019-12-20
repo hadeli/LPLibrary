@@ -8,3 +8,4 @@ class BookRepository extends EntityRepository
 {
 
 }
+
