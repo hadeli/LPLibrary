@@ -1,0 +1,18 @@
+ListBook:
+  path: /
+  controller: Alexandrie\Controller\BookController::list
+  methods: [GET]
+
+DetailBook:
+  path: /{id}
+  controller: Alexandrie\Controller\BookController::detail
+  methods: [GET]
+  requirements:
+    id: \d+
+
+DeleteBook:
+  path: /{id}
+  controller: Alexandrie\Controller\BookController::delete
+  methods: [DELETE]
+  requirements:
+    id: \d+
