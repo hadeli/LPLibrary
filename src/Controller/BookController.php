@@ -6,6 +6,7 @@ namespace Alexandrie\Controller;
 use Alexandrie\Entity\Book;
 use Alexandrie\Entity\Copy;
 use Alexandrie\Entity\Lending;
+use Alexandrie\Entity\Reader;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
@@ -59,20 +60,13 @@ class BookController extends AbstractController
         return $this->json($book, 200);
     }
 
-    public function getbookReaders($id){
+    public function getBookReaders($id){
         $book = $this->getDoctrine()->getRepository(Book::class)->find($id);
         $copy = $this->getDoctrine()->getRepository(Copy::class)->find($book);
-        $lending = $this->getDoctrine()->getRepository(Lending::class)->find($copy);
+        $lending = $this->getDoctrine()->getRepository(Lending::class)->findBy(array('copy_id' => $copy->getId()));
+        $reader = $this->getDoctrine()->getRepository(Reader::class)->findBy(array('id' => $lending->getFirstName()));
 
-        $book->setIsbn($request->get("isbn"));
-        $book->setName($request->get("name"));
-
-        $entityManager = $this->getDoctrine()->getManager();
-        $entityManager->persist($book);
-        $entityManager->flush();
-
-        return $this->json($book, 200);
-
+        return $this->json($reader, 200);
     }
 
 }

@@ -25,7 +25,7 @@ update_book_id:
 
 book-readers:
   path: /{id}/readers
-  controller: Alexandrie\Controller\BookController::getbookReaders
+  controller: Alexandrie\Controller\BookController::getBookReaders
   methods: GET
 
 

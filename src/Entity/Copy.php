@@ -3,6 +3,8 @@
 
 namespace Alexandrie\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+
 /**
  * Class Copy
  * @package Alexandrie\Entity
