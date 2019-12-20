@@ -3,6 +3,7 @@
 
 namespace Alexandrie\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
@@ -25,7 +26,11 @@ class Book {
     /** @Column(type="string", length=15) */
     private $isbn;
 
-    /** @OneToMany(targetEntity="Category", mappedBy="id") */
+
+    /**
+     * @Column(type="integer", length=11)
+     * @OneToMany(targetEntity="Category", mappedBy="id")
+     */
     private $category_id;
 
     /**

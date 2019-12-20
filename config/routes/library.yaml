@@ -1,0 +1,31 @@
+librarys:
+  path: /
+  controller: Alexandrie\Controller\LibraryController::displayLibrarys
+  methods: GET
+
+addLibrary:
+  path: /
+  controller: Alexandrie\Controller\LibraryController::createLibrary
+  methods: PUT
+
+library:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::getLibrary
+  requirements:
+    id: '\d+'
+  methods: GET
+
+updateLibrary:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::update
+  requirements:
+    id: '\d+'
+  methods: PATCH
+
+
+deleteLibrary:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::delete
+  requirements:
+    id: '\d+'
+  methods: DELETE

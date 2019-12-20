@@ -19,10 +19,16 @@ class Lending
      */
     private $id;
 
-    /** @OneToMany(targetEntity="Copy", mappedBy="id") */
+    /**
+     * @Column(type="integer", length=11)
+     * @OneToMany(targetEntity="Copy", mappedBy="id")
+     */
     private $copy_id;
 
-    /** @OneToMany(targetEntity="Reader", mappedBy="id") */
+    /**
+     * @Column(type="integer", length=11)
+     * @OneToMany(targetEntity="Reader", mappedBy="id")
+     */
     private $reader_id;
 
     /** @Column(type="date") */

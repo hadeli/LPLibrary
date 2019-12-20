@@ -19,10 +19,16 @@ class Copy {
      */
     private $id;
 
-    /** @OneToMany(targetEntity="Book", mappedBy="id") */
+    /**
+     * @Column(type="integer", length=11)
+     * @OneToMany(targetEntity="Book", mappedBy="id")
+     */
     private $book_id;
 
-    /** @OneToMany(targetEntity="Library", mappedBy="id") */
+    /**
+     * @Column(type="integer", length=11)
+     * @OneToMany(targetEntity="Library", mappedBy="id")
+     */
     private $library_id;
 
     /**
