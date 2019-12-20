@@ -29,3 +29,9 @@ deleteBook:
   requirements:
     id: '\d+'
   methods: DELETE
+
+bookLending:
+  path: /{id}/readers
+  controller: Alexandrie\Controller\SqlController::getReaderByBook
+  requirements:
+    id: '\d+'

@@ -29,3 +29,9 @@ deleteLibrary:
   requirements:
     id: '\d+'
   methods: DELETE
+
+bookInLibrary:
+  path: /{id}/books
+  controller: Alexandrie\Controller\SqlController::getBookLibrary
+  requirements:
+    id: '\d+'
