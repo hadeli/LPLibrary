@@ -1,0 +1,39 @@
+library_list:
+  path: /
+  controller: Alexandrie\Controller\LibraryController::list
+  methods: ['POST','GET']
+library_create:
+  path: /
+  methods: ['PUT']
+  controller: Alexandrie\Controller\LibraryController::create
+library_get:
+  path: /{id}
+  requirements:
+    id: '\d+'
+  methods: ['GET']
+  controller: Alexandrie\Controller\LibraryController::getLibrary
+library_edit:
+  path: /{id}
+  requirements:
+    id: '\d+'
+  methods: ['PATCH']
+  controller: Alexandrie\Controller\LibraryController::edit
+library_delete:
+  path: /{id}
+  requirements:
+    id: '\d+'
+  methods: ['DELETE']
+  controller: Alexandrie\Controller\LibraryController::delete
+library_count_books:
+  path: /{id}/books
+  requirements:
+    id: '\d+'
+  methods: ['POST','GET']
+  controller: Alexandrie\Controller\LibraryController::countLibraryBooks
+library_is_book_available:
+  path: /{id}/book/{book_id}/stocks
+  requirements:
+    id: '\d+'
+    book_id: '\d+'
+  methods: ['POST','GET']
+  controller: Alexandrie\Controller\LibraryController::isBookAvailable
