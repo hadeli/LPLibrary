@@ -54,16 +54,16 @@ class LendingController extends AbstractController implements ObjectController {
         }
         if ($startDate != null) {
             try {
-                $formatedStartDate = new DateTime($startDate);
-                $lending->setStartDate($formatedStartDate->format('Y-m-d'));
+                $formatedStartDate = DateTime::createFromFormat("Y-m-d",$startDate);
+                $lending->setStartDate($formatedStartDate);
             } catch (\Exception $e) {
                 return $this->json("startDate format not correct", 409);
             }
         }
         if ($endDate != null) {
             try {
-                $formatedEndDate = new DateTime($endDate);
-                $lending->setEndDate($formatedEndDate->format('Y-m-d'));
+                $formatedEndDate = DateTime::createFromFormat("Y-m-d",$startDate);;
+                $lending->setEndDate($formatedEndDate);
             } catch (\Exception $e) {
                 return $this->json("EndDate format not correct", 409);
             }
@@ -79,13 +79,13 @@ class LendingController extends AbstractController implements ObjectController {
         $startDate = $request->get("startDate");
         $endDate = $request->get("endDate");
         try {
-            $formattedStartDate = new DateTime($startDate);
+            $formattedStartDate = DateTime::createFromFormat("Y-m-d",$startDate);
         } catch (\Exception $e) {
             return $this->json("StartDate format not correct", 409);
         }
 
         try {
-            $formattedEndDate = new DateTime($endDate);
+            $formattedEndDate = DateTime::createFromFormat("Y-m-d",$endDate);
         } catch (\Exception $e) {
             return $this->json("EndDate format not correct", 409);
         }

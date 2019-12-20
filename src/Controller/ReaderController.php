@@ -54,8 +54,8 @@ class ReaderController extends AbstractController implements ObjectController {
         }
         if ($birthDate != null) {
             try {
-                $formatteBirthDate = new DateTime($birthDate);
-                $reader->setBirthDate($formatteBirthDate->format('Y-m-d'));
+                $formatteBirthDate = DateTime::createFromFormat("Y-m-d",$birthDate);
+                $reader->setBirthDate($formatteBirthDate);
             } catch (\Exception $e) {
                 return $this->json("BirthDate format not correct", 409);
             }
@@ -74,7 +74,7 @@ class ReaderController extends AbstractController implements ObjectController {
         $birthDate = $request->get("birthDate");
         $email = $request->get("email");
         try {
-            $formatteBirthDate = new DateTime($birthDate);
+            $formatteBirthDate = DateTime::createFromFormat("Y-m-d",$birthDate);
         } catch (\Exception $e) {
             return $this->json("BirthDate format not correct", 409);
         }
