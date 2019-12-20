@@ -28,3 +28,17 @@ book_delete:
   methods: DELETE
   requirements:
     id: '\d+'
+
+book_lending:
+  path: /{id}/readers
+  controller: Alexandrie\Controller\SQLController::getReaderByBook
+  methods: GET
+  requirements:
+    id: '\d+'
+
+book_available:
+  path: /library/{id}/books
+  controller: Alexandrie\Controller\SQLController::getAvailableByBook
+  methods: GET
+  requirements:
+    id: '\d+'

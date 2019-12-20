@@ -87,4 +87,5 @@ class BookController extends AbstractController
 
         return $this->json(['code' => 0, 'message' => 'Livre supprimé']);
     }
+
 }
