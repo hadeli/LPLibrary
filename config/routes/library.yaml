@@ -26,3 +26,13 @@ library_delete:
   controller: Alexandrie\Controller\LibraryController::deleteLibrary
   requirements:
     id: '\d+'
+
+#library_nbBooks:
+#  path: /{id}/books
+#  methods: ["GET"]
+#  controller: Alexandrie\Controller\LibraryController::getNbBooks
+#
+#library_availability:
+#  path: /{id}/book/{id}/stocks
+#  methods: ["GET"]
+#  controller: Alexandrie\Controller\LibraryController::getAvailability

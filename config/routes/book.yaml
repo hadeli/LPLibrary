@@ -26,3 +26,8 @@ book_delete:
   controller: Alexandrie\Controller\BookController::deleteBook
   requirements:
     id: '\d+'
+
+#book_borrowing:
+#  path: /{id}/readers
+#  methods: ["GET"]
+#  controller: Alexandrie\Controller\BookController::getBorrowing
