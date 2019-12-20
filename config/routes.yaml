@@ -16,11 +16,11 @@ copy:
 
 lending:
   resource: './routes/lending.yml'
-  prefix: /category/
+  prefix: /lending/
 
 library:
   resource: './routes/library.yml'
-  prefix: /category/
+  prefix: /library/
 
 reader:
   resource: './routes/reader.yml'
