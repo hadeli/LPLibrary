@@ -1,0 +1,32 @@
+{
+    "php": {
+        "version": "7.3"
+    },
+    "phpdocumentor/reflection-common": {
+        "version": "2.0.0"
+    },
+    "phpdocumentor/reflection-docblock": {
+        "version": "4.3.2"
+    },
+    "phpdocumentor/type-resolver": {
+        "version": "1.0.1"
+    },
+    "symfony/inflector": {
+        "version": "v5.0.2"
+    },
+    "symfony/property-access": {
+        "version": "v5.0.2"
+    },
+    "symfony/property-info": {
+        "version": "v5.0.2"
+    },
+    "symfony/serializer": {
+        "version": "v5.0.2"
+    },
+    "symfony/serializer-pack": {
+        "version": "v1.0.2"
+    },
+    "webmozart/assert": {
+        "version": "1.6.0"
+    }
+}

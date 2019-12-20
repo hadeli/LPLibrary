@@ -1,0 +1,18 @@
+ListReader:
+  path: /
+  controller: Alexandrie\Controller\ReaderController::list
+  methods: [GET]
+
+DetailReader:
+  path: /{id}
+  controller: Alexandrie\Controller\ReaderController::detail
+  methods: [GET]
+  requirements:
+    id: \d+
+
+DeleteReader:
+  path: /{id}
+  controller: Alexandrie\Controller\ReaderController::delete
+  methods: [DELETE]
+  requirements:
+    id: \d+
