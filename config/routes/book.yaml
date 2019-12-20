@@ -1,0 +1,29 @@
+get_book_list:
+  path: /
+  methods: ["GET"]
+  controller: Alexandrie\Controller\BookController::getBookList
+
+get_book:
+  path: /{id}
+  methods: ["GET"]
+  controller: Alexandrie\Controller\BookController::getBook
+  requirements:
+    id: '\d+'
+
+add_book:
+  path: /
+  methods: ["PUT"]
+  controller: Alexandrie\Controller\BookController::addBook
+
+delete_book:
+  path: /{id}
+  methods: ["DELETE"]
+  controller: Alexandrie\Controller\BookController::deleteBook
+  requirements:
+    id: '\d+'
+
+edit_book:
+  path: /{id}
+  methods: ["PATCH"]
+  controller: Alexandrie\Controller\BookController::editBook
+
