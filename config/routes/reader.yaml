@@ -1,0 +1,26 @@
+#Reader
+#GET, PUT, GET{id}, PATCH{id}, DELETE{id}
+list_reader:
+  path: /
+  controller: Alexandrie\Controller\ReaderController::listReaderAction
+  methods: GET
+
+list_reader_id:
+  path: /{id}
+  controller: Alexandrie\Controller\ReaderController::listReaderByIdAction
+  methods: GET
+
+delete_reader_id:
+  path: /{id}
+  controller: Alexandrie\Controller\ReaderController::deleteReaderByIdAction
+  methods: DELETE
+
+add_reader_id:
+  path: /{id}
+  controller: Alexandrie\Controller\ReaderController::addReader
+  methods: PUT
+
+patch_reader_id:
+  path: /{id}
+  controller: Alexandrie\Controller\ReaderController::updateReader
+  methods: PATCH
