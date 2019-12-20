@@ -27,3 +27,6 @@ edit_library:
   methods: ["PATCH"]
   controller: Alexandrie\Controller\LibraryController::editLibrary
 
+#number_of_books:
+#  path: /{id}/books
+#  methods: ["GET"]

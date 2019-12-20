@@ -27,3 +27,7 @@ edit_book:
   methods: ["PATCH"]
   controller: Alexandrie\Controller\BookController::editBook
 
+#get_readers_from_book_id:
+#  path: /{id}/readers
+#  methods: ["GET"]
+#  controller: Alexandrie\Controller\BookController::getReaders
