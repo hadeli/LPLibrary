@@ -1,3 +1,28 @@
 #index:
 #    path: /
 #    controller: Alexandrie\Controller\DefaultController::index
+
+# book
+book:
+  resource: './routes/book.yaml'
+  prefix: /book
+# category
+category:
+  resource: './routes/category.yaml'
+  prefix: /category
+# copy
+copy:
+  resource: './routes/copy.yaml'
+  prefix: /copy
+# lending
+lending:
+  resource: './routes/lending.yaml'
+  prefix: /lending
+# library
+library:
+  resource: './routes/library.yaml'
+  prefix: /library
+# reader
+reader:
+  resource: './routes/reader.yaml'
+  prefix: /reader
