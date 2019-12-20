@@ -12,10 +12,17 @@ listbook:
   controller: Alexandrie\Controller\BookController::listBookById
   methods: GET
 
-putbook:
-  path: /put_book/{value}
-  controller : Alexandrie\Controller\BookController::putBook
-  methods : PUT
+updatebook:
+  path: /up_book/{id}
+  controller : Alexandrie\Controller\BookController::updateBook
+  methods : PATCH
+
+deletebook:
+  path: /del_book/{id}
+  controller : Alexandrie\Controller\BookController::deleteBook
+  methods : DELETE
+
+
 
 listcategories:
   path: /categories
@@ -27,6 +34,8 @@ listcategory:
   controller: Alexandrie\Controller\CategoryController::listCategoryById
   methods: GET
 
+
+
 listcopies:
   path: /copies
   controller: Alexandrie\Controller\CopyController::listCopy
@@ -36,6 +45,8 @@ listcopy:
   path: /copies/{id}
   controller: Alexandrie\Controller\CopyController::listCopyById
   methods: GET
+
+
 
 listlendings:
   path: /lendings
@@ -47,6 +58,8 @@ listlending:
   controller: Alexandrie\Controller\LendingController::listLendingById
   methods: GET
 
+
+
 listlibraries:
   path: /libraries
   controller: Alexandrie\Controller\LibraryController::listLibrary
@@ -56,6 +69,8 @@ listlibrary:
   path: /libraries/{id}
   controller: Alexandrie\Controller\LibraryController::listLibraryById
   methods: GET
+
+
 
 listreaders:
   path: /readers

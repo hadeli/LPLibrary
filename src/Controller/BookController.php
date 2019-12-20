@@ -20,12 +20,37 @@ class BookController extends AbstractController
         return $this->json($result, 200);
     }
 
-//    public function addBook(){
-//        $book = new Book (1, 'Bambou', '939710589-2', 5);
-//        return $this->json($book);
-//    }
-//
-//    public function putBook($book){
-//        return new JsonResponse($book);
-//    }
+    public function updateBook($id)
+    {
+        $result = $this->getDoctrine()->getManager();
+        $book = $result->getRepository(Book::class)->find($id);
+
+        if (!$book) {
+            throw $this->createNotFoundException(
+                'No book found for id '.$id
+            );
+        }
+
+        $book->setName('New book name!');
+        $result->flush();
+
+        return $this->redirectToRoute('listbook', [
+            'id' => $book->getId()
+        ]);
+    }
+
+    public function deleteBook($id)
+    {
+        $result = $this->getDoctrine()->getManager();
+        $book = $result->getRepository(Book::class)->find($id);
+
+        if (!$book) {
+            throw $this->createNotFoundException(
+                'No book found for id '.$id
+            );
+        }
+
+        $result->remove($book);
+        $result->flush();
+    }
 }
