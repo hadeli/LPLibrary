@@ -2,40 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e3ff1c-1e22-46ed-a2d7-5bc51508537f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/routes/book.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/category.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/copy.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/lending.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/library.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/reader.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Library/BookController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Library/CategoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Library/CopyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Library/LendingController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Library/LibraryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Library/ReaderController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Library/Book.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Library/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Library/Copy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Library/Lending.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Library/Library.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Library/Reader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/BookRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CopyRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/LendingRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/LibraryRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ReaderRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Serializer/Library/BookSerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Serializer/Library/CategorySerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Serializer/Library/CopySerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Serializer/Library/LendingSerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Serializer/Library/LibrarySerializer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Serializer/Library/ReaderSerializer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Library/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Library/BookController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/Library/BookController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="136" column="26" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="26" />
+            <state relative-caret-position="446">
+              <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
               <folding>
                 <element signature="e#51#86#0#PHP" expanded="true" />
               </folding>
@@ -83,70 +51,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Serializer/Library/BookSerializer.php">
+        <entry file="file://$PROJECT_DIR$/config/routes/reader.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="48" column="50" lean-forward="true" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-              <folding>
-                <element signature="e#51#86#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/Library/CopyController.php">
+        <entry file="file://$PROJECT_DIR$/config/routes/library.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="49" column="49" lean-forward="true" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
-              <folding>
-                <element signature="e#51#86#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="476">
+              <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/Library/LendingController.php">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="128" column="42" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/Library/LibraryController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1001">
-              <caret line="96" column="26" lean-forward="true" selection-start-line="96" selection-end-line="97" />
-              <folding>
-                <element signature="e#51#89#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/Library/ReaderController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="153" column="28" lean-forward="true" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
-              <folding>
-                <element signature="e#51#88#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/Library/CategoryController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
-              <folding>
-                <element signature="e#51#90#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -209,17 +135,18 @@
         <option value="$PROJECT_DIR$/config/routes.yaml" />
         <option value="$PROJECT_DIR$/config/routes/reader.yaml" />
         <option value="$PROJECT_DIR$/src/Serializer/Library/ReaderSerializer.php" />
-        <option value="$PROJECT_DIR$/src/Serializer/Library/LendingSerializer.php" />
         <option value="$PROJECT_DIR$/config/routes/lending.yaml" />
         <option value="$PROJECT_DIR$/config/routes/book.yaml" />
         <option value="$PROJECT_DIR$/config/routes/library.yaml" />
         <option value="$PROJECT_DIR$/src/Controller/Library/LibraryController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/Library/BookController.php" />
         <option value="$PROJECT_DIR$/src/Controller/Library/ReaderController.php" />
         <option value="$PROJECT_DIR$/src/Controller/Library/CopyController.php" />
         <option value="$PROJECT_DIR$/src/Controller/Library/CategoryController.php" />
         <option value="$PROJECT_DIR$/src/Controller/Library/LendingController.php" />
         <option value="$PROJECT_DIR$/src/Serializer/Library/BookSerializer.php" />
+        <option value="$PROJECT_DIR$/src/Serializer/Library/LendingSerializer.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/Controller/Library/BookController.php" />
       </list>
     </option>
   </component>
@@ -388,6 +315,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Serializer" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -424,12 +352,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576827072973</updated>
-      <workItem from="1576827074198" duration="10597000" />
+      <workItem from="1576827074198" duration="11276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10597000" />
+    <option name="totallyTimeSpent" value="11276000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="29" width="1684" height="1000" extended-state="6" />
@@ -505,13 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/LendingRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Library/Lending.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -544,16 +465,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Serializer/Library/LendingSerializer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="48" column="57" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
-          <folding>
-            <element signature="e#51#89#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -604,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes/reader.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="12" selection-start-line="25" selection-end-line="25" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Library/Library.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -646,56 +550,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes/library.yaml">
+    <entry file="file://$PROJECT_DIR$/src/Repository/LendingRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Library/CategoryController.php">
+    <entry file="file://$PROJECT_DIR$/src/Serializer/Library/LendingSerializer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
-          <folding>
-            <element signature="e#51#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Library/ReaderController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="153" column="28" lean-forward="true" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
-          <folding>
-            <element signature="e#51#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Library/LibraryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1001">
-          <caret line="96" column="26" lean-forward="true" selection-start-line="96" selection-end-line="97" />
+        <state relative-caret-position="461">
+          <caret line="48" column="58" lean-forward="true" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
           <folding>
             <element signature="e#51#89#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Library/LendingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="128" column="42" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Library/CopyController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="49" column="49" lean-forward="true" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
-          <folding>
-            <element signature="e#51#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -710,10 +577,78 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Library/BookController.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/Library/CopyController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="49" column="49" lean-forward="true" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+          <folding>
+            <element signature="e#51#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Library/LendingController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
-          <caret line="136" column="26" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="26" />
+          <caret line="128" column="42" selection-start-line="128" selection-start-column="42" selection-end-line="128" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Library/LibraryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1001">
+          <caret line="96" column="26" lean-forward="true" selection-start-line="96" selection-end-line="97" />
+          <folding>
+            <element signature="e#51#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Library/ReaderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="153" column="28" lean-forward="true" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
+          <folding>
+            <element signature="e#51#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Library/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="97" column="5" lean-forward="true" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+          <folding>
+            <element signature="e#51#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes/library.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes/reader.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Library/BookController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="140" column="20" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
           <folding>
             <element signature="e#51#86#0#PHP" expanded="true" />
           </folding>

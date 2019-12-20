@@ -134,9 +134,8 @@ class BookController extends AbstractController
             -> getRepository(Library::class)
             -> find($id);
 
-        $library_array = json_decode($library);
-        $numberOfBooks = count($library_array->library);
-
+        $library_array = json_decode($this->json($library));
+        $numberOfBooks = count(array($library_array));
 
         try {
             return new Response($this-> json($numberOfBooks));
