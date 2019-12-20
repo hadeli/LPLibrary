@@ -1,0 +1,38 @@
+
+book:
+  path: /
+  controller: Alexandrie\Controller\Library\BookController::listBooks
+  methods: GET
+
+bookCreate:
+  path: /
+  controller: Alexandrie\Controller\Library\BookController::createBook
+  methods: ['PUT', 'GET']
+
+bookShow:
+  path: /{id}
+  controller: Alexandrie\Controller\Library\BookController::showBook
+  methods: GET
+  requirements:
+    id: \d+
+
+bookUpdate:
+  path: /{id}
+  controller: Alexandrie\Controller\Library\BookController::updateBook
+  methods: PATCH
+  requirements:
+    id: \d+
+
+bookDelete:
+  path: /{id}
+  controller: Alexandrie\Controller\Library\BookController::deleteBook
+  methods: DELETE
+  requirements:
+    id: \d+
+
+booksLended:
+  path: /{id}/readers
+  controller: Alexandrie\Controller\Library\BookController::booksLended
+  methods: GET
+  requirements:
+    id: \d+
