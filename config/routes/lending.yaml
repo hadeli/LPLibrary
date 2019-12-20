@@ -1,0 +1,29 @@
+get_lending_list:
+  path: /
+  methods: ["GET"]
+  controller: Alexandrie\Controller\LendingController::getLendingList
+
+get_lending:
+  path: /{id}
+  methods: ["GET"]
+  controller: Alexandrie\Controller\LendingController::getLending
+  requirements:
+    id: '\d+'
+
+add_lending:
+  path: /
+  methods: ["PUT"]
+  controller: Alexandrie\Controller\LendingController::addLending
+
+delete_lending:
+  path: /{id}
+  methods: ["DELETE"]
+  controller: Alexandrie\Controller\LendingController::deleteLending
+  requirements:
+    id: '\d+'
+
+edit_lending:
+  path: /{id}
+  methods: ["PATCH"]
+  controller: Alexandrie\Controller\LendingController::editLending
+

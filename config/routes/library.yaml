@@ -1,0 +1,32 @@
+get_library_list:
+  path: /
+  methods: ["GET"]
+  controller: Alexandrie\Controller\LibraryController::getLibraryList
+
+get_library:
+  path: /{id}
+  methods: ["GET"]
+  controller: Alexandrie\Controller\LibraryController::getLibrary
+  requirements:
+    id: '\d+'
+
+add_library:
+  path: /
+  methods: ["PUT"]
+  controller: Alexandrie\Controller\LibraryController::addLibrary
+
+delete_library:
+  path: /{id}
+  methods: ["DELETE"]
+  controller: Alexandrie\Controller\LibraryController::deleteLibrary
+  requirements:
+    id: '\d+'
+
+edit_library:
+  path: /{id}
+  methods: ["PATCH"]
+  controller: Alexandrie\Controller\LibraryController::editLibrary
+
+#number_of_books:
+#  path: /{id}/books
+#  methods: ["GET"]
