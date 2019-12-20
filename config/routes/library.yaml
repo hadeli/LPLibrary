@@ -1,0 +1,26 @@
+#Library
+#GET, PUT, GET{id}, PATCH{id}, DELETE{id}
+list_library:
+  path: /
+  controller: Alexandrie\Controller\LibraryController::listLibraryAction
+  methods: GET
+
+list_library_id:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::listLibraryByIdAction
+  methods: GET
+
+delete_library_id:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::deleteLibraryByIdAction
+  methods: DELETE
+
+add_library_id:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::addLibrary
+  methods: PUT
+
+patch_library_id:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::UpdateLibrary
+  methods: PATCH
