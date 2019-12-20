@@ -1,0 +1,31 @@
+listCopy:
+  path: /
+  controller: Alexandrie\Controller\CopyController::copyList
+  methods: ['GET']
+
+copy:
+  path: /{id}
+  controller: Alexandrie\Controller\CopyController::getCopy
+  requirements:
+    id: '\d+'
+  methods: ['GET']
+
+createCopy:
+  path: /
+  controller: Alexandrie\Controller\CopyController::createCopy
+  methods: ['PUT']
+
+updateCopy:
+  path: /{id}
+  controller: Alexandrie\Controller\CopyController::updateCopy
+  requirements:
+    id: '\d+'
+  methods: ['PATCH']
+
+deleteCopy:
+  path: /{id}
+  controller: Alexandrie\Controller\CopyController::deleteCopy
+  requirements:
+    id: '\d+'
+  methods: ['DELETE']
+
