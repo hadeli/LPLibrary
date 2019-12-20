@@ -1,0 +1,26 @@
+# Category routes
+
+category-list-all:
+  path: /
+  controller: Alexandrie\Controller\CategoryController::listCategoryAction
+  methods: GET
+
+category-list-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\CategoryController::listCategoryByIdAction
+  methods: GET
+
+category-delete-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\CategoryController::deleteCategoryByIdAction
+  methods: DELETE
+
+category-create:
+  path: /
+  controller: Alexandrie\Controller\CategoryController::createCategoryAction
+  methods: PUT
+
+category-update-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\CategoryController::updateCategoryByIdAction
+  methods: PATCH

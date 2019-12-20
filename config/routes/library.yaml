@@ -1,0 +1,26 @@
+# Library routes
+
+library-list-all:
+  path: /
+  controller: Alexandrie\Controller\LibraryController::listLibraryAction
+  methods: GET
+
+library-list-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::listLibraryByIdAction
+  methods: GET
+
+library-delete-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::deleteLibraryByIdAction
+  methods: DELETE
+
+library-create:
+  path: /
+  controller: Alexandrie\Controller\LibraryController::createLibraryAction
+  methods: PUT
+
+library-update-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\LibraryController::updateLibraryByIdAction
+  methods: PATCH

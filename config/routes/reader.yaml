@@ -1,0 +1,26 @@
+# Reader routes
+
+reader-list-all:
+  path: /
+  controller: Alexandrie\Controller\ReaderController::listReaderAction
+  methods: GET
+
+reader-list-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\ReaderController::listReaderByIdAction
+  methods: GET
+
+reader-delete-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\ReaderController::deleteReaderByIdAction
+  methods: DELETE
+
+reader-create:
+  path: /{id}
+  controller: Alexandrie\Controller\ReaderController::createReaderAction
+  methods: PUT
+
+reader-update-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\ReaderController::updateReaderByIdAction
+  methods: PATCH

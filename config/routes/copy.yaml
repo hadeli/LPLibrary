@@ -1,0 +1,26 @@
+# Copy routes
+
+copy-list-all:
+  path: /
+  controller: Alexandrie\Controller\CopyController::listCopyAction
+  methods: GET
+
+copy-list-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\CopyController::listCopyByIdAction
+  methods: GET
+
+copy-delete-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\CopyController::deleteCopyByIdAction
+  methods: DELETE
+
+copy-create:
+  path: /
+  controller: Alexandrie\Controller\CopyController::createCopyAction
+  methods: PUT
+
+copy-update-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\CopyController::updateCopyByIdAction
+  methods: PATCH

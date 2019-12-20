@@ -68,7 +68,7 @@ CREATE TABLE `category` (
 LOCK TABLES `category` WRITE;
 /*!40000 ALTER TABLE `category` DISABLE KEYS */;
 INSERT INTO `category` VALUES (1,'KEOMD','Action and adventure'),(2,'FYGOI','Alternate history'),(3,'VTPAW','Anthology'),(4,'SSUFK','Chick lit'),(5,'ERYTX','Children'),(6,'CEHJT','Comic book'),(7,'QXHIP','Coming-of-age'),(8,'IWXRK','Crime'),(9,'JCUTG','Drama'),(10,'TCWIB','Fairytale'),(11,'TXESD','Fantasy'),(12,'MSUNK','Graphic novel'),(13,'XOSBR','Historical fiction'),(14,'UEFRA','Horror'),(15,'SGXXH','Mystery'),(16,'JTAFV','Paranormal romance'),(17,'KTMGC','Picture book'),(18,'LLOFL','Poetry'),(19,'IPBCP','Political thriller'),(20,'GBQBB','Romance'),(21,'ZDJUB','Satire'),(22,'GZCQU','Science fiction'),(23,'DKSLZ','Short story'),(24,'VXLNH','Suspense'),(25,'YIHBH','Thriller'),(26,'BLUIZ','Young adult'),(27,'AKIYL','Art'),(28,'GNPDE','Autobiography'),(29,'SNMEB','Biography'),(30,'EILCO','Book review'),(31,'VUITB','Cookbook'),(32,'QZYAW','Diary'),(33,'QAQGY','Dictionary'),(34,'JXQIE','Encyclopedia'),(35,'VBVNL','Guide'),(36,'ACJBV','Health'),(37,'AOYIJ','History'),(38,'YKKJW','Journal'),(39,'JXPTY','Math'),(40,'XTZPD','Memoir'),(41,'EFLWL','Prayer'),(42,'KNILP','Religion, spirituality and new age'),(43,'VXFAF','Textbook'),(44,'SDUJR','Review'),(45,'KBEGW','Science'),(46,'CZARY','Self help'),(47,'UEAXN','Travel'),(48,'TWYVC','True crime');
-/*!40000 ALTER TABLE `category` ENABLE KEYS */;
+/*!40000 ALTER TABLE `category.yaml` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
