@@ -1,0 +1,18 @@
+ListCategory:
+  path: /
+  controller: Alexandrie\Controller\CategoryController::list
+  methods: [GET]
+
+DetailCategory:
+  path: /{id}
+  controller: Alexandrie\Controller\CategoryController::detail
+  methods: [GET]
+  requirements:
+    id: \d+
+
+DeleteCategory:
+  path: /{id}
+  controller: Alexandrie\Controller\CategoryController::delete
+  methods: [DELETE]
+  requirements:
+    id: \d+
