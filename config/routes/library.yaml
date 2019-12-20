@@ -22,5 +22,9 @@ add_library_id:
 
 patch_library_id:
   path: /{id}
-  controller: Alexandrie\Controller\LibraryController::UpdateLibrary
+  controller: Alexandrie\Controller\LibraryController::updateLibrary
   methods: PATCH
+
+count_book:
+  path: /{id}/books
+  controller : Alexandrie\Controller\LibraryController::countBook
