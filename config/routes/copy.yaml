@@ -1,0 +1,30 @@
+copy_index:
+    path: /
+    controller: Alexandrie\Controller\CopyController::index
+    methods: GET
+
+copy_add:
+    path: /
+    controller: Alexandrie\Controller\CopyController::add
+    methods: PUT
+
+copy_find:
+    path: /{id}
+    controller: AAlexandrie\Controller\CopyController::find
+    methods: GET
+    requirements:
+        id: '\d+'
+
+copy_update:
+    path: /{id}
+    controller: Alexandrie\Controller\CopyController::update
+    methods: PATCH
+    requirements:
+        id: '\d+'
+
+copy_delete:
+    path: /{id}
+    controller: Alexandrie\Controller\CopyController::delete
+    methods: DELETE
+    requirements:
+        id: '\d+'
