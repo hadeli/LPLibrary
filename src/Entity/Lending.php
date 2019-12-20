@@ -3,10 +3,12 @@
 
 namespace Alexandrie\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
 use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
+use Doctrine\ORM\Mapping\ManyToOne;
 use Doctrine\ORM\Mapping\OneToMany;
 
 /** @Entity */
@@ -21,13 +23,13 @@ class Lending
 
     /**
      * @Column(type="integer", length=11)
-     * @OneToMany(targetEntity="Copy", mappedBy="id")
+     * @ORM\OneToOne(targetEntity="Copy", mappedBy="id")
      */
     private $copy_id;
 
     /**
      * @Column(type="integer", length=11)
-     * @OneToMany(targetEntity="Reader", mappedBy="id")
+     * @ManyToOne(targetEntity="Reader", inversedBy="Lending")
      */
     private $reader_id;
 

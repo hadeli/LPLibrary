@@ -7,6 +7,7 @@ use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
+use Doctrine\ORM\Mapping\ManyToOne;
 use Doctrine\ORM\Mapping\OneToMany;
 
 /** @Entity */
@@ -21,13 +22,13 @@ class Copy {
 
     /**
      * @Column(type="integer", length=11)
-     * @OneToMany(targetEntity="Book", mappedBy="id")
+     * @ManyToOne(targetEntity="Book", inversedBy="Copy")
      */
     private $book_id;
 
     /**
      * @Column(type="integer", length=11)
-     * @OneToMany(targetEntity="Library", mappedBy="id")
+     * @ManyToOne(targetEntity="Library", inversedBy="Copy")
      */
     private $library_id;
 

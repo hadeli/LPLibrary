@@ -8,6 +8,7 @@ use Doctrine\ORM\Mapping\Column;
 use Doctrine\ORM\Mapping\Entity;
 use Doctrine\ORM\Mapping\GeneratedValue;
 use Doctrine\ORM\Mapping\Id;
+use Doctrine\ORM\Mapping\ManyToOne;
 use Doctrine\ORM\Mapping\OneToMany;
 
 /** @Entity */
@@ -29,7 +30,7 @@ class Book {
 
     /**
      * @Column(type="integer", length=11)
-     * @OneToMany(targetEntity="Category", mappedBy="id")
+     * @ManyToOne(targetEntity="Category", inversedBy="Book")
      */
     private $category_id;
 
