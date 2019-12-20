@@ -1,3 +1,42 @@
 #index:
 #    path: /
 #    controller: Alexandrie\Controller\DefaultController::index
+
+
+
+
+copies:
+  path: /copy
+  controller: Alexandrie\Controller\CopyController::listCopy
+  methods: GET
+copiesid:
+  path: /copy/{id}
+  controller: Alexandrie\Controller\CopyController::listCopyById
+  methods: GET
+
+lendings:
+  path: /lend
+  controller: Alexandrie\Controller\LendingController::listLend
+  methods: GET
+lendingsid:
+  path: /lend/{id}
+  controller: Alexandrie\Controller\LendingController::listLendById
+  methods: GET
+
+libraries:
+  path: /library
+  controller: Alexandrie\Controller\LibraryController::listLibrary
+  methods: GET
+librariesid:
+  path: /library/{id}
+  controller: Alexandrie\Controller\LibraryController::listLibraryById
+  methods: GET
+
+readers:
+  path: /reader
+  controller: Alexandrie\Controller\ReaderController::listReader
+  methods: GET
+readersid:
+  path: /reader/{id}
+  controller: Alexandrie\Controller\ReaderController::listReaderById
+  methods: GET
