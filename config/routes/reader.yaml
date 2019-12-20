@@ -1,0 +1,30 @@
+get-reader-list:
+  path: /
+  methods: ["GET"]
+  controller: Alexandrie\Controller\ReaderController::get_reader_list
+
+put-reader:
+  path: /
+  methods: ["PUT"]
+  controller: Alexandrie\Controller\ReaderController::put_reader
+
+get-reader:
+  path: /{id}
+  requirements:
+    id: '\d+'
+  methods: ["GET"]
+  controller: Alexandrie\Controller\ReaderController::get_reader
+
+patch-reader:
+  path: /{id}
+  requirements:
+    id: '\d+'
+  methods: ["PATCH"]
+  controller: Alexandrie\Controller\ReaderController::patch_reader
+
+delete-reader:
+  path: /{id}
+  requirements:
+    id: '\d+'
+  methods: ["DELETE"]
+  controller: Alexandrie\Controller\ReaderController::delete_reader
