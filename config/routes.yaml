@@ -1,3 +1,78 @@
 #index:
 #    path: /
-#    controller: Alexandrie\Controller\DefaultController::index
+#    controller: App\Controller\DefaultController::index-
+book_action:
+  path: /book
+  controller: App\Controller\BookController::listBookAction
+category_action:
+  path: /category
+  controller: App\Controller\CategoryController::listCategoryAction
+copy_action:
+  path: /copy
+  controller: App\Controller\CopyController::listCopyAction
+lending_action:
+  path: /lending
+  controller: App\Controller\LendingController::listLendingAction
+library_action:
+  path: /library
+  controller: App\Controller\LibraryController::listLibraryAction
+reader_action:
+  path: /reader
+  controller: App\Controller\ReaderController::listReaderAction
+
+book_action_by_id:
+  path: /book/{id}
+  controller: App\Controller\BookController::listBookActionById
+category_action_by_id:
+  path: /category/{id}
+  controller: App\Controller\CategoryController::listCategoryActionById
+copy_action_by_id:
+  path: /copy/{id}
+  controller: App\Controller\CopyController::listCopyActionById
+lending_action_by_id:
+  path: /lending/{id}
+  controller: App\Controller\LendingController::listLendingActionById
+Reader_action_by_id:
+  path: /reader/{id}
+  controller: App\Controller\ReaderController::listReaderActionById
+
+book_delete_by_id:
+  path: /book/{id}
+  controller: App\Controller\BookController::deleteBookbyId
+category_delete_by_id:
+  path: /category/{id}
+  controller: App\Controller\CategoryController::deleteCategorybyId
+copy_delete_by_id:
+  path: /copy/{id}
+  controller: App\Controller\CopyController::deleteCopybyId
+lending_delete_by_id:
+  path: /lending/{id}
+  controller: App\Controller\PlaneController::deleteLendingbyId
+reader_delete_by_id:
+  path: /reader/{id}
+  controller: App\Controller\ReaderController::deleteReaderbyId
+
+book_reader_by_id:
+  path: /book/{id}/readers
+  controller: App\Controller\ReaderController::bookReader
+
+book_update:
+  path: /book/{id}
+  controller: App\Controller\BookController::bookPutAction
+  methodes: PUT
+category_update:
+  path: /book/{id}
+  controller: App\Controller\CategoryController::categoryPutAction
+  methodes: PUT
+copy_update:
+  path: /copy/{id}
+  controller: App\Controller\CopyController::copyPutAction
+  methodes: PUT
+lending_update:
+  path: /lending/{id}
+  controller: App\Controller\LendingController::lendingPutAction
+  methodes: PUT
+reader_update:
+  path: /reader/{id}
+  controller: App\Controller\ReaderController::readerPutAction
+  methodes: PUT
