@@ -20,7 +20,8 @@ class BookSerializer implements ContextAwareNormalizerInterface{
         return array(
             'id'=>$object->id,
             'isbn'=>$object->isbn,
-            'name'=>$object->name
+            'name'=>$object->name,
+            'category_id'=>$object->category_id
         );
     }
 }

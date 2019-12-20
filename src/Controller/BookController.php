@@ -12,4 +12,16 @@ class BookController extends AbstractController{
         return $this->json($books);
     }
 
+    public function getBook(Book $id){
+        $books = $this->getDoctrine()->getRepository(Book::class)->find($id);
+        return $this->json($books);
+    }
+
+    public function deleteBook(Book $id){
+        $books = $this->getDoctrine()->getRepository(Book::class)->find($id);
+        $this->getDoctrine()->getManager()->remove($books);
+        $this->getDoctrine()->getManager()->flush();
+        return $this->json(null);
+    }
+
 }

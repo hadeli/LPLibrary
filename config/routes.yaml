@@ -19,3 +19,13 @@ category:
   path: /category
   controller: App\Controller\CategoryController::categoryList
   methods: ["GET"]
+
+library:
+  path: /library
+  controller: App\Controller\LibraryController::libraryList
+  methods: ["GET"]
+
+lending:
+  path: /lending
+  controller: App\Controller\LendingController::lendingList
+  methods: ["GET"]
