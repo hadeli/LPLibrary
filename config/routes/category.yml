@@ -1,0 +1,30 @@
+category-display-all:
+  path: /
+  controller: Alexandrie\Controller\CategoryController::displayAll
+  methods: GET
+
+category-add:
+  path: /
+  controller: Alexandrie\Controller\CategoryController::add
+  methods: PUT
+
+category-display:
+  path: /{id}
+  controller: Alexandrie\Controller\CategoryController::display
+  methods: GET
+  requirements:
+    id: \d+
+
+category-update:
+  path: /{id}
+  controller: Alexandrie\Controller\CategoryController::update
+  methods: PATCH
+  requirements:
+    id: \d+
+
+category-delete:
+  path: /{id}
+  controller: Alexandrie\Controller\CategoryController::delete
+  methods: DELETE
+  requirements:
+    id: \d+
