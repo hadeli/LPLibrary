@@ -21,3 +21,18 @@ library:
 reader:
   resource: './routes/reader.yaml'
   prefix: /reader
+
+book_users:
+  path: /book/{id}/readers
+  controller: Alexandrie\Controller\RequestsSQLController::getBookLending
+  methods: GET
+
+book_library:
+  path: /library/{id}/books
+  controller: Alexandrie\Controller\RequestsSQLController::getBookLibrary
+  methods: GET
+
+library_stocks:
+  path: /library/{id}/book/{id}/stocks
+  controller: Alexandrie\Controller\RequestsSQLController::getLibraryStocks
+  methods: GET
