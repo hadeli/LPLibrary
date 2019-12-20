@@ -1,0 +1,24 @@
+copy:
+  path: /
+  controller: Alexandrie\Controller\CopyController::listCopy
+  methods: GET
+
+copyCreate:
+  path: /create
+  controller: Alexandrie\Controller\CopyController::createCopy
+  methods: ['PUT', 'GET']
+
+copyShow:
+  path: /{id}
+  controller: Alexandrie\Controller\CopyController::showCopy
+  methods: GET
+
+copyUpdate:
+  path: /{id}
+  controller: Alexandrie\Controller\CopyController::updateCopy
+  methods: PATCH
+
+copyDelete:
+  path: /{id}
+  controller: Alexandrie\Controller\CopyController::deleteCopy
+  methods: DELETE
