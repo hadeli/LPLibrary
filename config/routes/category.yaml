@@ -1,0 +1,31 @@
+categorys:
+  path: /
+  controller: Alexandrie\Controller\CategoryController::displayCategorys
+  methods: GET
+
+addCategory:
+  path: /
+  controller: Alexandrie\Controller\CategoryController::createCategory
+  methods: PUT
+
+category:
+  path: /{id}
+  controller: Alexandrie\Controller\CategoryController::getCategory
+  requirements:
+    id: '\d+'
+  methods: GET
+
+updateCategory:
+  path: /{id}
+  controller: Alexandrie\Controller\CategoryController::update
+  requirements:
+    id: '\d+'
+  methods: PATCH
+
+
+deleteCategory:
+  path: /{id}
+  controller: Alexandrie\Controller\CategoryController::delete
+  requirements:
+    id: '\d+'
+  methods: DELETE
