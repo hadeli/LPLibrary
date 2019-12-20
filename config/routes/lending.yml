@@ -1,0 +1,26 @@
+# Lending routes
+
+lending-list-all:
+  path: /
+  controller: Alexandrie\Controller\LendingController::listLendingAction
+  methods: GET
+
+lending-list-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\LendingController::listLendingByIdAction
+  methods: GET
+
+lending-delete-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\LendingController::deleteLendingByIdAction
+  methods: DELETE
+
+lending-create:
+  path: /
+  controller: Alexandrie\Controller\LendingController::createLendingAction
+  methods: PUT
+
+lending-update-by-id:
+  path: /{id}
+  controller: Alexandrie\Controller\LendingController::updateLendingByIdAction
+  methods: PATCH
