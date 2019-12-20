@@ -1,3 +1,21 @@
 #index:
 #    path: /
 #    controller: Alexandrie\Controller\DefaultController::index
+
+user:
+  path: /user/{firstName}/{lastName}
+  controller: App\Controller\UserController::user
+  requirements:
+    firstName: "[a-zA-Z]+"
+    lastName: "[a-zA-Z]+"
+
+
+book:
+  path: /book
+  controller: App\Controller\BookController::bookList
+  methods: ["GET"]
+
+category:
+  path: /category
+  controller: App\Controller\CategoryController::categoryList
+  methods: ["GET"]
