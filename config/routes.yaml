@@ -1,27 +1,9 @@
 #index:
 #    path: /
 #    controller: Alexandrie\Controller\DefaultController::index
-books:
-  path: /books
-  controller: Alexandrie\Controller\BookController::listBook
-  methods: GET
-booksid:
-  path: /books/{id}
-  controller: Alexandrie\Controller\BookController::listBookById
-  methods: GET
-edit:
-  path: /edit/{id}
-  controller: Alexandrie\Controller\BookController::updateBook
 
 
-categories:
-  path: /cat
-  controller: Alexandrie\Controller\CategoryController::listCat
-  methods: GET
-catid:
-  path: /cat/{id}
-  controller: Alexandrie\Controller\CategoryController::listCatById
-  methods: GET
+
 
 copies:
   path: /copy

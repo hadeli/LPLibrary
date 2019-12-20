@@ -1,0 +1,21 @@
+categories:
+  path: /cat
+  controller: Alexandrie\Controller\CategoryController::listCat
+  methods: GET
+catid:
+  path: /cat/{id}
+  controller: Alexandrie\Controller\CategoryController::listCatById
+  methods: GET
+deletecat:
+  path: /cat/delete/{id}
+  controller: Alexandrie\Controller\CategoryController::deleteCategory
+  methods: DELETE
+updatecat:
+  path: /cat/update/{id}
+  controller: Alexandrie\Controller\CategoryController::updateCat
+  methods: PATCH
+
+addcat:
+  path: /
+  controller: Alexandrie\Controller\CategoryController::addCat
+  methods: PUT

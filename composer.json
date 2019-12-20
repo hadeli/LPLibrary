@@ -11,7 +11,8 @@
         "symfony/framework-bundle": "5.0.*",
         "symfony/orm-pack": "^1.0",
         "symfony/serializer-pack": "^1.0",
-        "symfony/yaml": "5.0.*"
+        "symfony/yaml": "5.0.*",
+      "ext-http": "*"
     },
     "require-dev": {
         "symfony/maker-bundle": "^1.14"

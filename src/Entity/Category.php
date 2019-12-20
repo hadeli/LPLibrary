@@ -48,4 +48,28 @@ class Category
         return $this->label;
     }
 
+    /**
+     * @param mixed $id
+     */
+    public function setId($id): void
+    {
+        $this->id = $id;
+    }
+
+    /**
+     * @param mixed $code
+     */
+    public function setCode($code): void
+    {
+        $this->code = $code;
+    }
+
+    /**
+     * @param mixed $label
+     */
+    public function setLabel($label): void
+    {
+        $this->label = $label;
+    }
+
 }
